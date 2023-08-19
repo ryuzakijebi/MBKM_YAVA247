@@ -13,7 +13,7 @@ $ getent group sudo
 ```
 ![Set Hostname](https://iili.io/HbfW6Rs.png)
 
-Hasil sudo:x:27:jebi,hadoop,hydra adalah output yang menggambarkan informasi tentang grup "sudo".
+Hasil **sudo : x : 27 : jebi,hadoop,hydra** adalah output yang menggambarkan informasi tentang grup "sudo".
 - **sudo** : Nama grup.
 - **x** : Menandakan bahwa password grup tersimpan dalam berkas /etc/group
 - **27** : Nomor identifikasi grup (GID).
