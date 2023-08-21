@@ -29,4 +29,4 @@ Cek versi Maven yang telah diinstal
 ```sh
 $ mvn -version
 ```
-![mvnver](https://iili.io/HbfWPOG.png)
+![mvnver](https://iili.io/Hb8ID3g.png)
