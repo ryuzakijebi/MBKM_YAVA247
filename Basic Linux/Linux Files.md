@@ -13,7 +13,6 @@
 
 #
 - Directory Structure
-
     | Jenis       | Deskripsi    
     |-------------------|----|
     | /(root) | Direktori tingkat atas. Isi untuk booting sebelum sistem berkas lainnya dipasang. |
