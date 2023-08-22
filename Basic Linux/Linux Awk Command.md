@@ -117,6 +117,20 @@ Helena ECE
     ```
 #
 - ### Contoh 8: Menghitung Jumlah dari Kolom Tertentu
+    Dalam contoh ini, kita ingin menghitung jumlah dari kolom ketiga (skor maksimal) dalam data skor mahasiswa.
+
+    Pertama, buat data skor mahasiswa dengan menggunakan perintah cat seperti berikut:
+    ```
+    cat >  StudentMarks  
+    Name, Marks, Max marks              
+    Sam,75,100  
+    Daniel,80,100  
+    John,74,100  
+    Arya,85,100  
+    Mike,70,100   
+    Helena,74,100  
+    ```
+
     Dalam contoh ini, kita ingin menghitung jumlah dari kolom ketiga (nilai maksimal) dalam data skor mahasiswa.
     ```
     awk -F"," '{x+=$3}END{print x}' StudentMarks
