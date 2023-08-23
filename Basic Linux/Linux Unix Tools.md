@@ -13,7 +13,6 @@
     | `b`         | Perangkat blok          |
 
 
-
     #
     ### Contoh Penggunaan command find
     |Command                            | Deskripsi                                                                                       |
@@ -21,8 +20,7 @@
     | `find . -name "*.txt"`             | Mencari semua berkas dengan ekstensi '.txt' dari direktori kerja saat ini.                     |
     | `find . -type d -name "*.bak"`     | Menampilkan semua direktori dengan ekstensi '.bak'.                                           |
     | `find . -newer msg.txt`            | Menampilkan semua berkas yang lebih baru dari 'msg.txt' di direktori kerja saat ini.           |
-    | `find . -name Demo.txt -delete`    | Menghapus berkas 'Demo.txt' dari direktori kerja saat ini. Harap berhati-hati, tindakan ini      |
-    |                                    | tidak bisa diurungkan.                                                                          |
+    | `find . -name Demo.txt -delete`    | Menghapus berkas 'Demo.txt' dari direktori kerja saat        |
     | `find . -type d -name Newdirectory`| Mencari lokasi direktori 'Newdirectory'.                                                      |
     | `find ./Newdirectory -mtime -1`    | Menemukan berkas yang dimodifikasi dalam satu hari terakhir di direktori 'Newdirectory'.        |
     | `find ./<nama direktori> -perm 777`| Menampilkan berkas dari direktori yang dapat dibaca, ditulis, dan dieksekusi oleh semua orang.  |
