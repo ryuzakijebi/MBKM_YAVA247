@@ -3,13 +3,15 @@
 - ### Command find
     Perintah "find" digunakan untuk mencari daftar berkas dengan berbagai kondisi seperti izin, kepemilikan pengguna, modifikasi, tanggal/waktu, ukuran, dan lain-lain. Perintah ini merupakan utilitas baris perintah yang mampu mencari berkas berdasarkan format yang ditentukan oleh pengguna.
 
-    | Finding files by type   | Deskripsi Jenis berkas                                                                                       |
-    |------------------------------------|-------------------------------------------------------------------------------------------------|
-    | f: regular file                    | 'f' mengindikasikan berkas reguler.                                                            |
-    | d: directory                       | 'd' mengindikasikan direktori.                                                                  |
-    | l: symbolic links                  | 'l' mengindikasikan tautan simbolik.                                                           |
-    | c: character devices               | 'c' mengindikasikan perangkat karakter.                                                        |
-    | b: block devices                   | 'b' mengindikasikan perangkat blok.                                                            |
+
+    | Tipe File | Keterangan              |
+    | --------- | ----------------------- |
+    | `f`         | Berkas biasa            |
+    | `d`         | Direktori               |
+    | `l`         | Tautan simbolik         |
+    | `c`         | Perangkat karakter      |
+    | `b`         | Perangkat blok          |
+
 
 
     #
