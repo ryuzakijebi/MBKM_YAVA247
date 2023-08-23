@@ -3,7 +3,7 @@
 - ### File Ownership
     | Jenis Ownership  | Deskripsi               |
     | ---------------- | ---------------- |
-    | `User`                  | User adalah orang yang membuat berkas. Secara default, siapa pun yang membuat berkas menjadi      | pemilik berkas tersebut. Seorang pengguna dapat membuat, menghapus, atau mengubah berkas.           |
+    | `User`                  | User adalah orang yang membuat berkas. Secara default, siapa pun yang membuat berkas menjadi user     | pemilik berkas tersebut. Seorang pengguna dapat membuat, menghapus, atau mengubah berkas.           |
     | `Group`                  | Sebuah grup dapat berisi beberapa pengguna. Semua pengguna yang termasuk dalam suatu grup memiliki izin akses yang sama untuk berkas.    |
     | `Other`                  | Siapa pun yang memiliki akses ke berkas selain pengguna dan grup masuk dalam kategori lainnya. Other tidak membuat berkas dan bukan anggota grup.     |
 
