@@ -38,8 +38,8 @@
     | `auth disable [type]`              | Menonaktifkan jenis otentikasi yang ditentukan.          |
     | `auth enable [type]`               | Mengaktifkan jenis otentikasi yang ditentukan.           |
     | `auth status`                      | Menampilkan status otentikasi.                          |
-    | `encrypt disable [type [input|output]]` | Menonaktifkan jenis enkripsi yang ditentukan.     |
-    | `encrypt enable [type [input|output]]`  | Mengaktifkan jenis enkripsi yang ditentukan.      |
+    | `encrypt disable [type [input/output]]` | Menonaktifkan jenis enkripsi yang ditentukan.     |
+    | `encrypt enable [type [input/output]]`  | Mengaktifkan jenis enkripsi yang ditentukan.      |
     | `encrypt status`                   | Menampilkan status enkripsi.                            |
     | `display [argument...]`            | Menampilkan nilai-nilai toogle dan set.                 |
     | `close`                            | Menutup sesi TELNET.                                    |
