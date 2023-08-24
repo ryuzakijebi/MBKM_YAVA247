@@ -1,10 +1,10 @@
 - ### Membuat file test.sh
-    ```
+    ```sh
     touch test.sh
     ```
     #
 - ### Isi file tesh.sh
-   ```
+   ```sh
    #!/bin/bash --
 
     echo ""
@@ -47,11 +47,11 @@
     ```
 #
 - ### Ubah permission tesh.sh
-    ```
+    ```sh
     chmod +x test.sh
     ```
     #
 - ### Jalankan tesh.sh
-    ```
+    ```sh
     ./test.sh
     ```
