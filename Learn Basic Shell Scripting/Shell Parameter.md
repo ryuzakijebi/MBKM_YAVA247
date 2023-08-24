@@ -64,8 +64,8 @@ done
 
     ```sh
     #!/bin/bash
-    echo "Nama pengguna: $USER"
-    echo "Direktori rumah: $HOME"
+    echo "Nama user: $USER"
+    echo "Direktori home: $HOME"
     ```
 #
 - ### Parameter with Options
