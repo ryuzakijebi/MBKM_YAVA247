@@ -4,8 +4,8 @@
     ```
     #
 - ### Isi file tesh.sh
-   ```sh
-   #!/bin/bash --
+    ```sh
+    #!/bin/bash --
 
     echo ""
     echo "-------------- File and Directory Management --------------"
