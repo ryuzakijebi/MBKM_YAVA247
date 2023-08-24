@@ -46,7 +46,7 @@
     echo "---------------------------------------------------------"
     ```
 #
-- ### Ubah permission tesh.sh
+- ### Tambahkan permission execute tesh.sh
     ```sh
     chmod +x test.sh
     ```
