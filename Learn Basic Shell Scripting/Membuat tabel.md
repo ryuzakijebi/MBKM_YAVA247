@@ -21,4 +21,4 @@ Jalankan sh
 #
 Hasil
 
-![test1](https://iili.io/HpyXNpt.png)
+![test1](https://iili.io/HpyhNKx.png)
