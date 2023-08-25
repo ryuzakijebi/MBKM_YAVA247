@@ -1,5 +1,5 @@
 ## Membuat tabel
-
+Program ini bertujuan untuk menghasilkan sejumlah baris data dalam format CSV yang berisi kolom Nama, Jabatan, Umur, dan Gaji. Jumlah baris data yang dihasilkan ditentukan oleh argumen yang diberikan saat menjalankan skrip. Data-data ini kemudian disimpan dalam file tabel.csv.
 - **Nama** dan **Jabatan** digenerate random dari file /usr/share/dict/words
 - **Umur** digenerate random dari variabel **range_umur**
 - **Gaji** digenerate random dari variabel **range_gaji**
