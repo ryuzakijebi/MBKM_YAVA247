@@ -21,6 +21,10 @@
     Sapa Uchiha Jebi
     ```
     ![test1](https://iili.io/Hy35HRn.png)
+
+    Script ini mendefinisikan sebuah fungsi bernama ***Sapa*** yang mengambil dua parameter. Fungsi ini bertugas menampilkan pesan "Halo" diikuti oleh nilai dari parameter pertama dan kedua.
+
+    Setelah mendefinisikan fungsi Sapa, script ini memanggil fungsi tersebut dengan parameter "Uchiha" dan "Jebi". Hasilnya, di layar akan ditampilkan pesan "Halo Uchiha Jebi".
 #
 - ### Returning Values from Functions
     Kita dapat mengembalikan nilai dari fungsi menggunakan perintah return. Jika ingin menghentikan eksekusi fungsi tanpa menghentikan seluruh skrip, gunakan perintah return dengan nilai yang diinginkan.
@@ -40,6 +44,13 @@
     echo "Nilai return adalah $ret"
     ```
     ![test2](https://iili.io/Hy359HX.png)
+
+    Langkah-langkah yang dijalankan oleh program :
+    1. Mendefinisikan sebuah fungsi bernama TampilkanPesan yang mengambil dua parameter. Fungsi ini bertugas menampilkan pesan "Halo" diikuti oleh nilai dari parameter pertama dan kedua, kemudian mengembalikan nilai 10 menggunakan pernyataan return 10.
+
+    2. Setelah mendefinisikan fungsi TampilkanPesan, script ini memanggil fungsi tersebut dengan parameter "Uchiha" dan "Jebi". Selanjutnya, script menangkap nilai kembalian dari fungsi yang disimpan dalam variabel ret.
+
+    3. Kemudian menampilkan pesan "Nilai return adalah" diikuti oleh nilai yang disimpan dalam variabel ret.
 #
 - ### Nested Functions
     Fungsi dapat memanggil fungsi lain, termasuk dirinya sendiri. Ini dikenal sebagai fungsi bertingkat atau rekursif.
@@ -61,6 +72,8 @@
     FungsiSatu
     ```
     ![test3](https://iili.io/Hy3RpSt.png)
+    
+    Script ini memanggil fungsi FungsiSatu, yang kemudian mencetak pesan pertama dan memanggil FungsiDua. FungsiSatu memanggil FungsiDua dari dalam tubuh fungsinya sendiri, inilah mengapa output nya adalah menampilkan pesan dari kedua fungsi.
 #
 - ### Function Call from Prompt
     Kita dapat menempatkan definisi-definisi fungsi yang sering digunakan di dalam file .profile. Definisi-definisi ini akan tersedia setiap kali user login dan user dapat menggunakannya pada command prompt.
