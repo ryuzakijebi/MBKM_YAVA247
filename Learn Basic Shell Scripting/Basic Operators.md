@@ -1,4 +1,5 @@
 - ### Arithmetic Operators
+    Operator aritmatika digunakan untuk melakukan operasi matematika pada bilangan
     | Operasi Aritmatika  | Keterangan |
     | ------------------- | --------------------------- |
     | `+`                 | Penjumlahan                  |
@@ -11,6 +12,7 @@
     | `!=`                | Ketidaksamaan                |
 #
 - ### Relational Operators
+    Operator relasional digunakan untuk membandingkan nilai antara dua ekspresi atau variabel
     | Operasi Relasional  | Keterangan |
     | ------------------- | -------------------------- |
     | `-eq`               | Sama dengan                |
@@ -21,6 +23,7 @@
     | `-le`               | Lebih kecil atau sama dengan |
 #
 - ### Boolean Operators
+    Operator boolean digunakan untuk melakukan operasi logika antara dua nilai boolean (true atau false).
     | Operator Logika     | Keterangan |
     | ------------------- | -------------------------- |
     | `!`                 | Negasi logika              |
@@ -28,6 +31,7 @@
     | `-a`                | AND logika                 |
 #
 - ### String Operators
+    Operator string digunakan untuk memanipulasi tipe data string.
     | Operator | Deskripsi |
     | -------- | ----------------------------------------- |
     | `=` | Memeriksa apakah nilai dua operand sama atau tidak; jika ya, maka kondisinya menjadi true. |
@@ -38,6 +42,7 @@
 
 #
 - ### File Test Operators
+    Operator uji berkas (file test operators) digunakan untuk memeriksa status berkas dalam shell scripting. 
     | Operator   | Keterangan                                                  |
     | ---------- | ------------------------------------------------------------ |
     | `-b file`  | Memeriksa apakah file merupakan jenis berkas blok; jika ya, maka kondisinya dianggap true. |
