@@ -65,7 +65,21 @@ echo ${var:?"Print this message"}
 echo "5 - Value of var is ${var}"
 ```
 #
+Hasil
 
+```sh
+Variable is not set
+1 - Value of var is
+Variable is not set
+2 - Value of var is Variable is not set
+3 - Value of var is
+This is default value
+4 - Value of var is Prefix
+Prefix
+5 - Value of var is Prefix
+```
+#
+Pembahasan per baris syntax :
 | Variable Substitution | Keterangan |
 | --------------------- | ---------- |
 | `${var:-"Variable is not set"}` | Menggantikan nilai `var` dengan teks "Variable is not set" jika `var` kosong atau tidak di set. |
