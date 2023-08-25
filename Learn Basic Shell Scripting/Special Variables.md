@@ -84,4 +84,6 @@ else
     echo "Berkas ditemukan"
 fi
 ```
-Script ini menjalankan perintah ls pada sebuah berkas yang tidak ada. Jika perintah gagal (exit status non-zero), pesan "Berkas tidak ditemukan" akan ditampilkan.
+Script ini menjalankan perintah ls pada sebuah berkas yang tidak ada. Jika perintah gagal (exit status akan bernilai non-zero), pesan "Berkas tidak ditemukan" akan ditampilkan.
+
+![testmain](https://iili.io/HyFqsyl.png)
