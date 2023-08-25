@@ -47,7 +47,7 @@ Parameter khusus dalam shell script digunakan untuk mengakses semua argumen bari
         echo $arg
     done
     ```
-
+#
 ### Exit Status
 Variabel $? dalam shell script mewakili exit status dari perintah yang paling baru dieksekusi. Exit status ini memberikan informasi tentang hasil dari eksekusi perintah tersebut, apakah berhasil atau tidak.
 
