@@ -9,7 +9,7 @@
 | `-gt`     | Lebih besar dari               |
 | `-ge`     | Lebih besar dari atau sama dengan |
 
-
+#
 - ## If then else
     Pernyataan if-then-else mengatur eksekusi skrip berdasarkan kondisi. Jika kondisi benar, blok then dieksekusi, jika tidak, blok else dieksekusi
 
