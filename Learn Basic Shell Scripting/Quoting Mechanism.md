@@ -29,6 +29,7 @@
     echo 'Hello, $USER!'
     ```
     ![test1](https://iili.io/Hy3nbWP.png)
+    
     Dalam contoh di atas, string $USER! akan dianggap sebagai string biasa, dan akan dicetak Hello, $USER! bukan mengambil nilai dari variabel $USER.
     
 #
@@ -50,6 +51,7 @@
     echo "Hello, $USER!"
     ```
     ![test2](https://iili.io/Hy3nms1.png)
+    
     Dalam contoh di atas, string $USER! akan bertindak sebagai variabel, program akan mengambil nilai dari variabel $USER.
     
 #
@@ -62,4 +64,5 @@
     Dalam contoh di atas, perintah date dieksekusi, dan hasilnya disimpan dalam variabel DATE. Kemudian, hasilnya digunakan dalam perintah echo untuk mencetak tanggal saat ini. 
 
     ![test3](https://iili.io/Hy3o8YJ.png)
-    Backquotes berguna ketika Anda ingin menggabungkan hasil eksekusi perintah dengan teks lain dalam shell.
+    
+    Backquotes berguna ketika kita ingin menggabungkan hasil eksekusi perintah dengan teks lain dalam shell.
