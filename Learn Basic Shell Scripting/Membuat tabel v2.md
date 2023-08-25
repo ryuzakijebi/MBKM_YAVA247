@@ -1,44 +1,38 @@
-## Membuat tabel v2
+## Membuat tabel
 
-- **Nama** digenerate random mengambil 2 part dari variabel **part_nama**
-- **Jabatan** digenerate random dari list variabel **pilihan_jabatan**
+- **Nama** dan **Jabatan** digenerate random dari file /usr/share/dict/words
 - **Umur** digenerate random dari variabel **range_umur**
 - **Gaji** digenerate random dari variabel **range_gaji**
+- Menggunakan perintah Output Redirection untuk mengalihkan keluaran program ke berkas tabel.csv
 
-```sh
-!/bin/bash
+  ```sh
+  #!/bin/bash
 
-output_file="tabel.csv"
+  output_file="tabel.csv"
 
-echo " Nama, Jabatan, Umur, Gaji" > "$output_file"
+  echo " Nama, Jabatan, Umur, Gaji" > "$output_file"
 
-range_umur=({17..35})
-pilihan_jabatan=("Hokage" "ANBU" "Chunin" "Genin" "Jonin")
-range_gaji=({5000..45000})
-parts_nama=("Uchiha" "Udin" "Uzumaki" "Junaedi" "Itachi" "Kakashi" "Asep" "Bayu")
+  range_umur=({17..35})
+  range_gaji=({5000..45000})
 
-generate_nama() {
-  nama=""
-  for _ in {1..2}; do
-    nama_part=${parts_nama[$((RANDOM % ${#parts_nama[@]}))]}
-    nama="$nama $nama_part"
+  i=1
+  while [ $i -le $1 ]; do
+    nama=$(shuf -n 1 /usr/share/dict/words)
+    jabatan=$(shuf -n 1 /usr/share/dict/words)
+    umur=${range_umur[$((RANDOM % ${#range_umur[@]}))]}
+    gaji=${range_gaji[$((RANDOM % ${#range_gaji[@]}))]}
+    echo "$nama, $jabatan, $umur, $gaji" >> "$output_file"
+    ((i++))
   done
-  echo "$nama"
-}
 
-i=1
-while [ $i -le 50 ]; do
-  nama=$(generate_nama)
-  jabatan=${pilihan_jabatan[$((RANDOM % ${#pilihan_jabatan[@]}))]}
-  umur=${range_umur[$((RANDOM % ${#range_umur[@]}))]}
-  gaji=${range_gaji[$((RANDOM % ${#range_gaji[@]}))]}
-  echo "$nama, $jabatan, $umur, $gaji" >> "$output_file"
-  ((i++))
-done
+  echo "Tabel berhasil dibuat"
 
-echo "Tabel berhasil dibuat"
-```
-![test1](https://iili.io/HyHTOyQ.png)
+  ```
+  #
+  Contoh
+  ```
+  ./coba1.sh 1000
+  ```
+  Dari perintah ini program akan melakukan perulangan sebanyai jumlah variabel $1. Variabel $1 adalah argumen pertama saat menjalankan script. Pada perintah diatas argument pertama adalam 1000. Jadi nilai $1 = 1000 dan perulangan akan dilakukan 1000x untuk membuat 1000 baris data.
 
-
-
+  ![test1](https://iili.io/Hy3WPrg.jpg)
