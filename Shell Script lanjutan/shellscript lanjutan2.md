@@ -1,6 +1,6 @@
 # Disk Monitoring
 
-Program ini adalah skrip shell yang memonitor status penggunaan disk pada suatu sistem. Skrip ini mengumpulkan informasi tentang host, alamat IP, pengguna, dan tanggal saat ini. 
+Program ini berfungsi untuk memonitor status penggunaan disk pada suatu sistem. Skrip ini mengumpulkan informasi tentang host, alamat IP, pengguna, dan tanggal saat ini. 
 
 Menggunakan perintah `df -h`, skrip mengambil data ukuran total disk, ukuran yang digunakan, ukuran tersedia, dan persentase penggunaan disk. 
 
