@@ -70,13 +70,10 @@ Jalankan program function.sh dengan parameter sesuai kebutuhan, dalam contoh ini
 ./run.sh 1000
 ```
 
-
-
-
 ![run](https://iili.io/Hye3IHu.png)
 
 #
 ### Hasil Output Program
-Akan ada 2 file baru yang dibuat, file pertama adalah `tabel.csv` (memiliki 4 kolom) yang merupakan hasil dari function `generate table`  dan `update_table.csv` yang merupakan hasil dari function `update table.csv` (memiliki kolom tambahan id dan code).
+Akan ada 2 file baru yang dibuat, file pertama adalah `tabel.csv` (memiliki 4 kolom) yang merupakan hasil dari function `generate table`  dan `update_table.csv` (memiliki kolom tambahan id dan code) yang merupakan hasil dari function `update_table`.
 
 ![hasil](https://iili.io/Hye3xSe.png)
