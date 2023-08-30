@@ -5,48 +5,56 @@ Untuk melakukan sourcing ada 2 file yang digunakan.
 #
 1. function.sh
 
-    File function.sh memiliki 2 function yaitu `generate_table` yang berfungsi untuk menyimpan perintah regenerate data dan pembuatan tabel ke file ***tabel.csv***, serta function `update table` untuk menambahkan kolom id dan code dan melakukan update untuk di teruskan ke file ***update_table.csv***.
+    File function.sh memiliki 3 function yaitu `generate_nama` yang berfungsi untuk mengambil 2 part random dari array `parts_nama`, lalu funtion `generate_table` yang berfungsi untuk regenerate data dan pembuatan tabel ke file ***tabel.csv***, serta function `update table` untuk menambahkan kolom id dan code dan melakukan update untuk di teruskan ke file baru ***update_table.csv***.
     ```sh
+    parts_nama=("Udin" "Uchiha" "Junaedi" "Asep" "Uzumaki" "Bayu" )
+    pilihan_jabatan=("Hokage" "ANBU" "Chunin" "Genin" "Jonin")
     range_umur=({17..35})
     range_gaji=({5000..45000})
     range_code=({100..900})
+    file_table="table.csv"
+    file_update_table="update_table.csv"
+
+    generate_nama(){
+        nama=""
+        for _ in {1..2}; do
+            nama_part=${parts_nama[$((RANDOM % ${#parts_nama[@]}))]}
+            nama="$nama $nama_part"
+        done
+        echo "$nama"
+    }
 
     generate_table() {
-        output_file="tabel.csv"
-        echo "Nama|Jabatan|Umur|Gaji" > "$output_file"
-        
+        echo "Nama|Jabatan|Umur|Gaji" > "$file_table"
+
         local i=1
         while [ $i -le $1 ]; do
-            nama=$(shuf -n 1 /usr/share/dict/words)
-            jabatan=$(shuf -n 1 /usr/share/dict/words)
+            nama=$(generate_nama)
+            jabatan=${pilihan_jabatan[$((RANDOM % ${#pilihan_jabatan[@]}))]}
             umur=${range_umur[$((RANDOM % ${#range_umur[@]}))]}
             gaji=${range_gaji[$((RANDOM % ${#range_gaji[@]}))]}
-            echo "$nama|$jabatan|$umur|$gaji" >> "$output_file"
+            echo "$nama|$jabatan|$umur|$gaji" >> "$file_table"
             ((i++))
         done
 
-    echo "Tabel berhasil dibuat"
+        echo "Tabel berhasil dibuat"
     }
 
     update_table() {
-        file="tabel.csv"
-        output="update_tabel.csv"
-
-        echo "id|nama|jabatan|umur|gaji|code" > "$output"
+        echo "id|nama|jabatan|umur|gaji|code" > "$file_update_table"
 
         local i=1
         while IFS='|' read -r nama jabatan umur gaji; do
             if [ $i -gt 1 ]; then
                 id=$(printf "%04d" $((i - 1)))
                 code=${range_code[$((RANDOM % ${#range_code[@]}))]}
-                echo "$id|$nama|$jabatan|$umur|$gaji|$code" >> "$output"
+                echo "$id|$nama|$jabatan|$umur|$gaji|$code" >> "$file_update_table"
             fi
             ((i++))
-        done < "$file"
+        done < "$file_table"
 
         echo "Update Selesai"
     }
-
     ```    
 #
 2. run.sh 
@@ -73,10 +81,11 @@ Untuk mengeksekusi program cukup jalankan file run.sh dengan parameter sesuai ke
 ./run.sh 1000
 ```
 
-![run](https://iili.io/HyO8Swl.png)
+
+![run](https://iili.io/HyOtsLu.png)
 
 #
 ### Hasil Output Program
 Akan ada 2 file baru yang dibuat, file pertama adalah `tabel.csv` (memiliki 4 kolom) yang merupakan hasil dari function `generate table`  dan `update_table.csv` yang merupakan hasil dari function `update table.csv` (memiliki kolom tambahan id dan code).
 
-![hasil](https://iili.io/HyO8Ut2.png)
+![hasil](https://iili.io/HyOtiXe.png)
