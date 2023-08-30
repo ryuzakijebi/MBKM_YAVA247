@@ -28,7 +28,7 @@ generate_nama() {
 generate_table() {
     echo "Nama|Jabatan|Umur|Gaji" > "$file_table"
 
-    i=1
+    local i=1
     while [ $i -le $1 ]; do
         nama=$(generate_nama)
         jabatan=${pilihan_jabatan[$((RANDOM % ${#pilihan_jabatan[@]}))]}
@@ -44,7 +44,7 @@ generate_table() {
 update_table() {
     echo "id|nama|jabatan|umur|gaji|code" > "$file_update_table"
 
-    i=1
+    local i=1
     while IFS='|' read -r nama jabatan umur gaji; do
         if [ $i -gt 1 ]; then
             id=$(printf "%04d" $((i - 1)))
