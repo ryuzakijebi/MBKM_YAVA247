@@ -3,7 +3,7 @@ Program ini bertujuan untuk membuat tabel dan kemudian melakukan update terhadap
 
 File ini memimiliki beberapa function
 - function `generate_nama` berfungsi untuk mengambil 2 part random dari array `parts_nama` yang akan digunakan untuk generate data kolom nama
-- funtion `generate_table` yang berfungsi untuk regenerate data dan membuat tabel ke file ***tabel.csv***
+- function `generate_table` yang berfungsi untuk regenerate data dan membuat tabel ke file ***tabel.csv***
 - function `update table` untuk menambahkan kolom id dan code dan melakukan update untuk di teruskan ke file baru ***update_table.csv***.
 
 Saat dieksekusi, program akan memanggil function `generate_table` dan `update table`.
