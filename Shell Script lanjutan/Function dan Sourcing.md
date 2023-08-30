@@ -1,4 +1,4 @@
-# Function dan Sourcing
+# Function
 Program ini bertujuan untuk membuat tabel dan kemudian melakukan update terhadap file tabel yang telah dibuat. 
 
 File ini memimiliki beberapa function
@@ -16,7 +16,7 @@ range_code=({100..900})
 file_table="table.csv"
 file_update_table="update_table.csv"
 
-generate_nama() {
+generate_nama() { 
     nama=""
     for _ in {1..2}; do
         nama_part=${parts_nama[$((RANDOM % ${#parts_nama[@]}))]}
