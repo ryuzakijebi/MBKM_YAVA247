@@ -22,7 +22,7 @@ Konfigurasi ini berfungsi untuk menjalankan mkdir.sh sebanyak 5x dengan durasi j
 
 
 #
-# Copy file to hdfs
+# Send file to hdfs
 ### File generate data
 Program ini berfungsi untuk generate data dan memindahkan file output nya ke directory hdfs
 ```sh
