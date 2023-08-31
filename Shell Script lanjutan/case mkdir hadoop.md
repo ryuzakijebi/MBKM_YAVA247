@@ -69,9 +69,9 @@ hdfs_directory="/tmp/$current_time"
 ```
 
 #
-Crontab yang akan mengeksekusi program setiap menit pada menit 26-30 (5x eksekusi)
+Crontab yang akan mengeksekusi program setiap menit pada menit 25-30
 ```sh
-26-30 * * * * /bin/bash /home/hadoop/send_data.sh
+25-30 * * * * /bin/bash /home/hadoop/send_data.sh
 ```
 #
 ### Hasil
