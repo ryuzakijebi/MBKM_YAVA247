@@ -13,7 +13,9 @@ Fungsi utama dari membuat issue adalah untuk melacak, mengelola, dan berkomunika
     ![](https://iili.io/HyZDiOl.png)
 #
 4. Jika sudah menyelesaikan suatu issue, klik ***Close Issue***. Issue tersebut tidak akan muncul dalam daftar aktif.
-    ![](https://iili.io/HyZDPR4.png)
+    ![](https://iili.io/Hytenkb.png)
 
 #
 Membuat dan mengelola issue adalah cara yang efektif untuk mengatur pekerjaan, berkomunikasi dengan tim, dan memantau progres proyek. Dengan ini tim dapat memastikan bahwa setiap aspek dalam project tercatat, dan dapat dikelola secara efisien.
+
+#
