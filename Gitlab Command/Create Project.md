@@ -4,8 +4,7 @@
 
     ![](https://iili.io/HyZ7eAG.png)
 #
-### Push Repository ke Project
-3. Cek dan copy URL remote gitlab 
+3. Cek dan copy URL remote project
 
     ![](https://iili.io/HyZ7wSn.png)
 #
