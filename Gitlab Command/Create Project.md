@@ -1,4 +1,4 @@
-### Create Project dan CLone Project
+### Create Project
 1. Masuk ke Account Gitlab, pada menu dashboard klik ***New Project***
 2. Input nama Project dan deskripsi project
 

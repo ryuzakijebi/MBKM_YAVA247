@@ -55,22 +55,24 @@
 
 #
 #  B. Edit Project and commit to branch
-1. Lakukan perubahan pada file testL.md lalu cek git status
+1. Lakukan perubahan pada file testL.md
 
     ```sh
     nano testL.md
     ```
-    ```sh
-    git status
-    ```
+
     ![](https://iili.io/HyZX60J.png)
 #
-2. terdapat perubahan pada file testL.md
-
+2. Cek perubahan yang terjadi, terdapat perubahan pada file testL.md
+     ```sh
+    git status
+    ```
     ![](https://iili.io/HyZXsJR.png)
 #
 3. Tambahkan file yang telah di edit kedalam staging area. Gunakan "titik" untuk menambahkan semua file yang mengalami perubahan pada staging area.
-
+    ```sh
+    git add .
+    ```
     ![](https://iili.io/HyZXPUv.png)
 #
 4. Commit perubahan file
