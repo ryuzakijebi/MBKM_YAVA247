@@ -1,5 +1,4 @@
 - # Setup Environment
-
     ### Protocol Buffers 3.7.1 (required to build native code)
     ```sh
     curl -L -s -S https://github.com/protocolbuffers/protobuf/releases/download/v3.7.1/protobuf-java-3.7.1.tar.gz -o protobuf-3.7.1.tar.gz
