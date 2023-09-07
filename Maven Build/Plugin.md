@@ -22,7 +22,7 @@ Maven menyediakan dua jenis plugin utama:
 | Plugin              | Penggunaan                           | Penjelasan                                                                                   |
 |---------------------|-------------------------------------|----------------------------------------------------------------------------------------------|
 | Clean               | `mvn clean`                         | Membersihkan direktori `target` setelah build.           |
-| Compiler            | `mvn compiler:compile`              | Mengompilasi file sumber Java dalam proyek untuk menghasilkan bytecode yang siap dijalankan. |
+| Compiler            | `mvn compiler:compile`              | Mengompilasi file sumber Java dalam project untuk menghasilkan bytecode yang siap dijalankan. |
 | Surefire            | `mvn surefire:test`                 | Menjalankan pengujian unit (biasanya dengan JUnit) dan membuat laporan pengujian.           |
 | Jar                 | `mvn jar:jar`                       | Membangun file JAR dari proyek, mengemas kode Java menjadi arsip yang dapat dijalankan.  |
 | War                 | `mvn war:war`                       | Membangun file WAR dari proyek, biasanya untuk aplikasi web Java.                              |
