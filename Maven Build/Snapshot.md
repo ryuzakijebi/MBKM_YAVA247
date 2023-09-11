@@ -2,7 +2,7 @@
 Snapshot adalah versi proyek yang masih dalam pengembangan aktif dan belum dirilis secara resmi. Ini adalah versi yang masih berada dalam tahap pengembangan dan biasanya digunakan untuk menguji perubahan baru atau fitur-fitur yang ditambahkan ke dalam project.
 #
 ### Penamaan Snapshot
-Biasanya, Snapshot disertakan dalam nomor versi project dengan kata "SNAPSHOT" ditambahkan sebagai bagian dari versi. Contohnya "1.0-SNAPSHOT" atau "2.0.0-SNAPSHOT". Kata "SNAPSHOT" digunakan untuk mengindikasikan bahwa preoject ini adalah versi pengembangan.
+Biasanya disertakan dalam nomor versi project dengan kata "SNAPSHOT" ditambahkan sebagai bagian dari versi. Contohnya "1.0-SNAPSHOT" atau "2.0.0-SNAPSHOT". Kata "SNAPSHOT" digunakan untuk mengindikasikan bahwa project ini adalah versi pengembangan.
 
 #
 ### Fungsi Snapshot
