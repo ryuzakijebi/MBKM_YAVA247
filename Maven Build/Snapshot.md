@@ -12,12 +12,9 @@ Snapshot digunakan oleh pengembang untuk menguji perubahan terbaru dalam kode pr
 ### Repositori Snapshot
 Maven menyediakan repositori yang disebut "Snapshot Repository" atau "Snapshots Repository" untuk menyimpan dan mendistribusikan versi Snapshot.
 
-#
-### Mengganti Versi snapshot
-Ketika project mencapai tingkat stabilitas yang memadai, versi Snapshot dapat digantikan dengan versi yang dirilis secara resmi. Biasanya dilakukan dengan mengubah nomor versi dari "SNAPSHOT" menjadi nomor versi yang stabil (misalnya, dari "1.0-SNAPSHOT" menjadi "1.0.0").
 
 #
-## Contoh
+### Contoh
 
 1. POM untuk project app.ui
 
@@ -67,7 +64,7 @@ Ketika project mencapai tingkat stabilitas yang memadai, versi Snapshot dapat di
 
     Project app-ui memiliki dependensi pada data-service dengan versi 1.0-SNAPSHOT. Maven secara otomatis akan mengunduh versi terbaru dari data-service SNAPSHOT setiap kali project app-ui dibuild.
 
-    Dengan konfigurasi ini, tim pengembang app-ui dapat terus menggunakan kode terbaru dari data-service tanpa harus secara manual mengubah versi dependensi mereka setiap kali ada pembaruan dalam project data-service.
+    Dengan konfigurasi ini, tim pengembang app-ui dapat terus menggunakan kode terbaru dari data-service tanpa harus secara manual mengubah versi dependensi setiap kali ada pembaruan dalam project data-service.
 #
 3. Untuk membuild project app-ui dan memastikan bahwa project mendapatkan versi terbaru dari data-service:1.0-SNAPSHOT, dapat menjalankan perintah dengan opsi -U:
    ```sh
@@ -75,3 +72,8 @@ Ketika project mencapai tingkat stabilitas yang memadai, versi Snapshot dapat di
     ```
    
    Dengan perintah ini, Maven akan mengunduh versi Snapshot terbaru dari data-service:1.0-SNAPSHOT dari repositori sebelum membangun project app-ui. Keuntungannya adalah kita tidak perlu menunggu secara manual atau mengubah versi dependensi dalam file POM setiap kali ada pembaruan di project data-service.
+
+
+#
+## Mengganti Versi snapshot
+Ketika project mencapai tingkat stabilitas yang memadai, versi Snapshot dapat digantikan dengan versi yang dirilis secara resmi. Biasanya dilakukan dengan mengubah nomor versi dari "SNAPSHOT" menjadi nomor versi yang stabil (misalnya, dari "1.0-SNAPSHOT" menjadi "1.0.0").
