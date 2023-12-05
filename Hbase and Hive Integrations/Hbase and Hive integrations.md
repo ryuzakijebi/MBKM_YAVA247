@@ -1,4 +1,7 @@
 # Hive and Hbase Integrations
+Hive berfungsi sebagai sistem data warehousing dan query language di atas Hadoop, sedangkan HBase adalah database NoSQL terdistribusi yang dirancang untuk menyimpan data yang bersifat sparse. 
+
+Dengan menggunakan ```HBaseStorageHandler```, Hive dapat berinteraksi dengan tabel HBase seolah-olah itu adalah tabel Hive, hal ini memungkinkan user HiveQL untuk query data yang disimpan di HBase.
 
 ### Siapkan Data
 customers.csv
@@ -123,9 +126,26 @@ TBLPROPERTIES("hbase.table.name"="customers_jebi");
 
 #
 ### Cek data dari tabel `hive_customers_jebi`
-Sekarang tabel ini sudah terintegrasi dengan tabel hbase `customers_jebi`.
+Sekarang tabel ini sudah terintegrasi dengan tabel hbase `customers_jebi`. Tabel ini menggunakan ```HBaseStorageHandler``` untuk menginterpretasi struktur tabel dari HBase. 
 ```
 select * from hive_customers_jebi;
 ```
 ![Alt text](img/image-6.png)
     
+#
+### Tes Query untuk mengakses data
+
+Menampilkan data nama, phone dan kota
+
+```
+SELECT customername, phone, city FROM hive_customers_jebi;
+```
+![Alt text](image.png)
+#
+
+Menampilkan data customer dari france
+
+```
+SELECT customerNumber, customername, phone, addressline1, country FROM hive_customers_jebi WHERE country = 'France';
+```
+![Alt text](image-1.png)
