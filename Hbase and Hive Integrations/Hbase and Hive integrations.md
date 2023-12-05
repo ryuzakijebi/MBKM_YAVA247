@@ -21,7 +21,24 @@ customers.csv
 create 'customers_jebi', 'customersData', 'customersAddress', 'transactions'
 ``
 
-![Alt text](1.png)
+![Alt text](img/1.png)
+
+
+List Family Column data table
+```
+- RowKey:customerNumber
+- customersData:customerName
+- customersData:contactLastName
+- customersData:contactFirstName
+- customersData:phone
+- customersAddress:addressLine1
+- customersAddress:addressLine2
+- customersAddress:city
+- customersAddress:state
+- customersAddress:postalCode
+- customersAddress:country
+- transactions:salesRepEmployeeNumber
+```
 #
 ### sh script untuk input data ke tabel hbase
 ```
@@ -47,7 +64,7 @@ put '$TABLE_NAME', '$customerNumber', 'transactions:creditLimit', '$creditLimit'
 EOF
 done
 ```
-![Alt text](3-1.png)
+![Alt text](img/3-1.png)
 
 Kemudian jalankan script nya.
 ```
@@ -58,7 +75,7 @@ chmod +x puthbase.sh
 ### Cek data yang telah diinput di tabel hbase
 scan 'customer_jebi'
 
-![Alt text](image-7.png)
+![Alt text](img/image-7.png)
 #
 
 ### Buka hive shell dan buat tabel yang akan diintergrasi dengan table hbase
@@ -68,7 +85,7 @@ su - hive
 beeline -n hive -p hive
 ```
 
-Command create table :
+*Syntax command create table :*
 ```
 CREATE EXTERNAL TABLE IF not exists <nama tabel> (kolom1 tipedata1, kolom2 tipedata2, ...)
 ROW FORMAT DELIMITED
@@ -101,14 +118,14 @@ WITH SERDEPROPERTIES ("hbase.columns.mapping"=":key,customersData:customerName,c
 TBLPROPERTIES("hbase.table.name"="customers_jebi");
 ```
 
-![Alt text](image-5.png)
+![Alt text](img/image-5.png)
 #
 
 #
-### Cek value dari tabel `hive_customers_jebi`
+### Cek data dari tabel `hive_customers_jebi`
 Sekarang tabel ini sudah terintegrasi dengan tabel hbase `customers_jebi`.
 ```
 select * from hive_customers_jebi;
 ```
-![Alt text](image-6.png)
+![Alt text](img/image-6.png)
     
