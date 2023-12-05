@@ -17,9 +17,9 @@ customers.csv
 
 #
 ### Buat tabel dan family column hbase
-``
+```
 create 'customers_jebi', 'customersData', 'customersAddress', 'transactions'
-``
+```
 
 ![Alt text](img/1.png)
 
