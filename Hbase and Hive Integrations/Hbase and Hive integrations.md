@@ -88,7 +88,7 @@ su - hive
 beeline -n hive -p hive
 ```
 
-*Syntax command create table :*
+*Syntax command create integrations table:*
 ```
 CREATE EXTERNAL TABLE IF not exists <nama tabel> (kolom1 tipedata1, kolom2 tipedata2, ...)
 ROW FORMAT DELIMITED
