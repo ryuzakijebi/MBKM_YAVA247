@@ -13,7 +13,10 @@ Deklarasikan nama variabel untuk menyimpan hasil eksekusi perintah SQL pada tabe
 ```
 val <nama_variabel> = spark.sql("SELECT * FROM <nama_tabel>")
 ```
+![Alt text](image-9.png)
 
+
+Contoh : menggunakan table "orders" dari hive
 ```
 val all_orders = spark.sql("SELECT * FROM orders")
 ```
