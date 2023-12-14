@@ -12,15 +12,18 @@ spark = SparkSession.builder.appName("CarList").enableHiveSupport().getOrCreate(
 spark.sql("SHOW DATABASES").show()
 ```
 ![Alt text](image-7.png)
-```
-spark.sql("SHOW TABLES").show()
-```
-![Alt text](image-8.png)
 
 ```
 spark.sql("USE jebi") 
 ```
 ![Alt text](image-9.png)
+
+```
+spark.sql("SHOW TABLES").show()
+```
+![Alt text](image-8.png)
+
+
 #
 ## Create external table Hive
 ```
